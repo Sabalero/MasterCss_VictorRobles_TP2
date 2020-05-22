@@ -1,0 +1,122 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "TrebuchetMS";
+    src: url('fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url('fonts/BebasNeue.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* simbolos */
+
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/websymbols-regular-webfont.woff') format('woff'), url('fonts/websymbols-regular-webfont.ttf') format('truetype'), url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* GENERALES */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url("../img/pattern.png");
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.gear {
+    font-family: "WebSymbolsRegular";
+}
+
+
+/* CABECERA */
+
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    font-family: "BebasNeue";
+    color: white;
+}
+
+#logo {
+    float: left;
+    width: 200px;
+    background-color: #37bcf9;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+#logo .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+}
+
+#logo h3 {
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+}
+
+#menu {
+    float: right;
+    height: 70px;
+    /* lo dejamos transparente ya que el fondo es negro */
+    background: transparent;
+}
+
+#menu ul li {
+    font-size: 24px;
+    /* para flotar elementos */
+    display: inline-block;
+    list-style: none;
+    /* (0 = arriba abajo), (20 = derecha izquierda)  */
+    margin: 0px 20px;
+    /* espacio entre letras */
+    letter-spacing: 1px;
+    /* centrado en formavertical */
+    line-height: 70px;
+}
+
+#menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover {
+    /* cuando se pase el mause por encima */
+    color: #37bcf9;
+    /* transformacion cuando se pase mouse por arriba */
+    transform: scale(1.2, 1.2);
+}
