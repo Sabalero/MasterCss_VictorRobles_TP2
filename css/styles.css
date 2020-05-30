@@ -565,7 +565,7 @@ body {
 }
 
 #articles article {
-    width: 100%;
+    width: 98%;
     height: auto;
     border: 1px solid #ccc;
     /* 40px (arriba y abajo), auto (derecha e izquierda) */
